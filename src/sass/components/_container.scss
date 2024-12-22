@@ -1,0 +1,16 @@
+.container {
+	// ===== Mobile screem 480px =====
+	max-width: $mobileScreen;
+	padding: 0 15px;
+	margin: 0 auto;
+	overflow: clip;
+
+	// ===== Tablet screen 768px =====
+	@media screen and (min-width: $tabletScreen) {
+		max-width: $tabletScreen;
+	}
+	// ===== Desctop screen 1200px =====
+	@media screen and (min-width: $desctopScreen) {
+		max-width: $desctopScreen;
+	}
+}

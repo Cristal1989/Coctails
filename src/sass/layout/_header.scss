@@ -1,0 +1,131 @@
+.header {
+  background-color: #f3d1c2;
+  padding: 30px 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  @media screen and (max-width: $tabletScreen) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: $tabletScreen) {
+    position: relative;
+  }
+}
+.nav__logo{
+  width: 80px;
+  height: 60px;
+  margin-right: 40px;
+  @media screen and (max-width: $mobileScreen) {
+    margin-right: 10px;
+  }
+}
+
+
+.nav__link{
+  font-family: $fontMain;
+  font-size: 16px;
+  letter-spacing: 0.3;
+  font-weight: 500;
+  color: black;
+  @media screen and (max-width: $mobileScreen) {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav__link:last-child{
+    margin-left: 40px;
+    @media screen and (max-width: $mobileScreen) {
+    margin-left: 10px;
+  }
+}
+
+.search {
+  display: flex;
+  @media screen and (max-width: $tabletScreen) {
+    margin-top: 30px;
+  }
+}
+
+.toggle__theme{
+  width: 61px;
+  height: 27px;
+  border-radius: 20px;
+  background-color: gray;
+  display: flex;
+  align-self: center;
+  padding: 3px;
+  margin-left: 20px;
+  transition: 0.2s all ease-in;
+  margin-left: 55px;
+
+  @media screen and (max-width: $tabletScreen) {
+    position: absolute;
+    top: 48px;
+    right: 20px;
+  }
+}
+.toggle__theme.dark__theme{
+  background-color: green;
+  justify-content: end;
+  transition: 0.2s all ease-in;
+  @media screen and (max-width: $tabletScreen) {
+    
+  }
+}
+
+.nav__input{
+  font-family: $fontMain;
+  font-size: 16px;
+  letter-spacing: 0.3;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 0 10px 15px;
+
+  &:active{
+    border: none;
+    outline: none;
+  }
+  &:focus{
+    border: 1px solid grey;
+  border-radius: 4px;
+  }
+
+  &::placeholder{
+    font-family: $fontMain;
+  font-size: 16px;
+  letter-spacing: 0.3;
+  opacity: 0.7;
+  padding-left: 10px;
+  }
+
+  @media screen and (max-width: $tabletScreen) {
+    width: 450px;
+    height: 40px;
+  }
+  @media screen and (max-width: $mobileScreen) {
+    width: 300px;
+  }
+}
+
+.sircle {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
